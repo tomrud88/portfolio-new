@@ -1,0 +1,189 @@
+const Projects = () => {
+  return (
+    <section id="projects" className="py-20 px-6 bg-[#1A1D26]">
+      <div className="max-w-6xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <span className="text-[#F5F5F5]">Featured</span>{" "}
+            <span className="text-[#3FA7D6]">Projects</span>
+          </h2>
+          <div className="w-20 h-1 bg-[#3FA7D6] mx-auto rounded-full mb-6"></div>
+          <p className="text-[#B0B0B0] max-w-2xl mx-auto">
+            Here are some of my recent projects that showcase my skills and
+            experience in full-stack development.
+          </p>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="grid gap-8">
+          {/* Project 1 - Real Estate */}
+          <div className="bg-[#15171E] rounded-xl border border-[#3FA7D6]/10 hover:border-[#3FA7D6]/30 transition-all duration-300 overflow-hidden">
+            {/* Project Image */}
+            <div className="aspect-video bg-gradient-to-br from-[#3FA7D6]/20 to-[#15171E] flex items-center justify-center">
+              <div className="text-[#3FA7D6] text-6xl opacity-50">🏠</div>
+            </div>
+
+            {/* Project Content */}
+            <div className="p-8">
+              <h3 className="text-xl md:text-2xl font-bold text-[#F5F5F5] mb-4">
+                Real Estate Platform
+              </h3>
+              <p className="text-[#B0B0B0] leading-relaxed mb-6">
+                Modern real estate platform with React, Node.js, MongoDB, and
+                Socket.io for real-time chat functionality.
+              </p>
+
+              {/* Tech Stack */}
+              <div className="flex flex-wrap gap-2 mb-6">
+                {["React", "Node.js", "MongoDB", "Socket.io", "JWT"].map(
+                  (tech, index) => (
+                    <span
+                      key={index}
+                      className="px-3 py-1 text-sm bg-[#3FA7D6]/10 text-[#3FA7D6] rounded-full border border-[#3FA7D6]/20"
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
+              </div>
+
+              {/* Project Links */}
+              <div className="flex space-x-4">
+                <a
+                  href="https://real-estate-peach-one.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#3FA7D6] text-[#15171E] px-4 py-2 rounded-lg hover:bg-[#3FA7D6]/90 transition-colors duration-300 font-medium"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/tomrud88/real-estate"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-[#3FA7D6] text-[#3FA7D6] px-4 py-2 rounded-lg hover:bg-[#3FA7D6] hover:text-[#15171E] transition-all duration-300 font-medium"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Project 2 - Mommy Blog */}
+          <div className="bg-[#15171E] rounded-xl border border-[#3FA7D6]/10 hover:border-[#3FA7D6]/30 transition-all duration-300 overflow-hidden">
+            {/* Project Image */}
+            <div className="aspect-video bg-gradient-to-br from-[#3FA7D6]/20 to-[#15171E] flex items-center justify-center">
+              <div className="text-[#3FA7D6] text-6xl opacity-50">📝</div>
+            </div>
+
+            {/* Project Content */}
+            <div className="p-8">
+              <h3 className="text-xl md:text-2xl font-bold text-[#F5F5F5] mb-4">
+                Mommy Blog
+              </h3>
+              <p className="text-[#B0B0B0] leading-relaxed mb-6">
+                Family blog platform with user authentication, post management,
+                and responsive design.
+              </p>
+
+              {/* Tech Stack */}
+              <div className="flex flex-wrap gap-2 mb-6">
+                {["Next.js", "React", "CSS", "Authentication"].map(
+                  (tech, index) => (
+                    <span
+                      key={index}
+                      className="px-3 py-1 text-sm bg-[#3FA7D6]/10 text-[#3FA7D6] rounded-full border border-[#3FA7D6]/20"
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
+              </div>
+
+              {/* Project Links */}
+              <div className="flex space-x-4">
+                <a
+                  href="https://mommy-blog-example.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#3FA7D6] text-[#15171E] px-4 py-2 rounded-lg hover:bg-[#3FA7D6]/90 transition-colors duration-300 font-medium"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/tomrud88/mommy-blog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-[#3FA7D6] text-[#3FA7D6] px-4 py-2 rounded-lg hover:bg-[#3FA7D6] hover:text-[#15171E] transition-all duration-300 font-medium"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Project 3 - Inter Milan */}
+          <div className="bg-[#15171E] rounded-xl border border-[#3FA7D6]/10 hover:border-[#3FA7D6]/30 transition-all duration-300 overflow-hidden">
+            {/* Project Image */}
+            <div className="aspect-video bg-gradient-to-br from-[#3FA7D6]/20 to-[#15171E] flex items-center justify-center">
+              <div className="text-[#3FA7D6] text-6xl opacity-50">⚽</div>
+            </div>
+
+            {/* Project Content */}
+            <div className="p-8">
+              <h3 className="text-xl md:text-2xl font-bold text-[#F5F5F5] mb-4">
+                Inter Milan Website
+              </h3>
+              <p className="text-[#B0B0B0] leading-relaxed mb-6">
+                Interactive football club website with modern design, player
+                profiles, match schedules, and responsive layout.
+              </p>
+
+              {/* Tech Stack */}
+              <div className="flex flex-wrap gap-2 mb-6">
+                {[
+                  "React",
+                  "Firebase",
+                  "Material-UI",
+                  "HTML",
+                  "CSS",
+                  "JavaScript",
+                ].map((tech, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1 text-sm bg-[#3FA7D6]/10 text-[#3FA7D6] rounded-full border border-[#3FA7D6]/20"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              {/* Project Links */}
+              <div className="flex space-x-4">
+                <a
+                  href="https://inter-milan-website.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#3FA7D6] text-[#15171E] px-4 py-2 rounded-lg hover:bg-[#3FA7D6]/90 transition-colors duration-300 font-medium"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/tomrud88/inter-website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-[#3FA7D6] text-[#3FA7D6] px-4 py-2 rounded-lg hover:bg-[#3FA7D6] hover:text-[#15171E] transition-all duration-300 font-medium"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

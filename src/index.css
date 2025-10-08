@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Variables for Portfolio Color Scheme */
+:root {
+  --color-bg-primary: #15171e;
+  --color-accent-primary: #3fa7d6;
+  --color-accent-secondary: #f5f5f5;
+  --color-text-primary: #e0e0e0;
+  --color-text-secondary: #b0b0b0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
