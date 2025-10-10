@@ -123,14 +123,11 @@ const Skills = () => {
             </h3>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                "GraphQL",
-                "Docker",
+
+                "GCP",
+                "AI",
                 "AWS",
-                "PostgreSQL",
-                "Redis",
                 "Testing (Jest)",
-                "CI/CD",
-                "Microservices",
               ].map((skill, index) => (
                 <motion.span
                   key={index}
