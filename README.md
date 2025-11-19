@@ -23,6 +23,7 @@ A modern, responsive portfolio website built with React, Vite, and Tailwind CSS.
 ## 🛠️ Built With
 
 ### Frontend
+
 - **React 19.1.1** - Modern React with latest features
 - **Vite** - Fast build tool and development server
 - **Tailwind CSS** - Utility-first CSS framework
@@ -30,13 +31,14 @@ A modern, responsive portfolio website built with React, Vite, and Tailwind CSS.
 - **Lucide React** - Beautiful icons
 
 ### Tools & Deployment
+
 - **EmailJS** - Contact form email delivery
 - **ESLint** - Code linting and formatting
 - **Vercel** - Deployment and hosting
 
 ## 🎨 Design Features
 
-- **Color Scheme**: 
+- **Color Scheme**:
   - Primary: `#3FA7D6` (Cyan Blue)
   - Background: `#15171E` (Dark Charcoal)
   - Text: `#F5F5F5` (Light Gray)
@@ -64,33 +66,39 @@ src/
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js (v18 or higher)
 - npm or yarn
 
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/tomrud88/portfolio.git
    cd portfolio
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Set up EmailJS (for contact form)**
+
    - Create account at [EmailJS](https://www.emailjs.com/)
    - Create email service and template
    - Copy your credentials to `.env.local`:
+
    ```bash
    VITE_EMAILJS_SERVICE_ID=your_service_id
-   VITE_EMAILJS_TEMPLATE_ID=your_template_id  
+   VITE_EMAILJS_TEMPLATE_ID=your_template_id
    VITE_EMAILJS_PUBLIC_KEY=your_public_key
    ```
 
 4. **Start development server**
+
    ```bash
    npm run dev
    ```
@@ -114,28 +122,33 @@ Detailed setup instructions are available in `EMAILJS_SETUP.md`. The contact for
 ## 📱 Responsive Design
 
 The portfolio is fully responsive with breakpoints:
+
 - **Mobile**: < 768px
-- **Tablet**: 768px - 1024px  
+- **Tablet**: 768px - 1024px
 - **Desktop**: > 1024px
 
 ## 🎯 Key Sections
 
 ### Hero Section
+
 - Professional introduction
 - Call-to-action buttons
 - Smooth scroll navigation
 
 ### Projects
+
 - Real Estate Platform (React, Node.js, MongoDB, Socket.io)
 - Mommy Blog (Next.js, React, MongoDB, React Quill)
 - Inter Milan Website (HTML, CSS, JavaScript)
 
 ### Skills
+
 - **Frontend**: React, JavaScript, TypeScript, HTML/CSS, Tailwind CSS, Material UI, Bootstrap, Next.js
-- **Backend**: Node.js, Express.js, MongoDB, JWT, Socket.io, RESTful APIs  
+- **Backend**: Node.js, Express.js, MongoDB, JWT, Socket.io, RESTful APIs
 - **Tools**: Git, Vercel, VS Code, npm/yarn, Vite, Prisma
 
 ### Contact
+
 - Working contact form with EmailJS
 - Direct email link
 - Social media links
@@ -143,13 +156,16 @@ The portfolio is fully responsive with breakpoints:
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
+
 1. Push code to GitHub
 2. Connect repository to Vercel
 3. Add environment variables in Vercel dashboard
 4. Deploy automatically on push
 
 ### Other Platforms
+
 The project works with any static hosting service:
+
 - Netlify
 - GitHub Pages
 - Firebase Hosting

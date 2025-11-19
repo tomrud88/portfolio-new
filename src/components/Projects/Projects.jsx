@@ -17,7 +17,77 @@ const Projects = () => {
 
         {/* Projects Grid */}
         <div className="grid gap-8">
-          {/* Project 1 - Real Estate */}
+          {/* Project 1 - Travel Guide */}
+          <div className="bg-[#15171E] rounded-xl border border-[#3FA7D6]/10 hover:border-[#3FA7D6]/30 transition-all duration-300 overflow-hidden">
+            {/* Project Image */}
+            <div className="aspect-video bg-gradient-to-br from-[#3FA7D6]/20 to-[#15171E] flex items-center justify-center relative overflow-hidden">
+              <img
+                src="/travel-guide.webp"
+                alt="Travel Guide App"
+                className="w-full h-full object-cover absolute inset-0"
+                onError={(e) => {
+                  e.target.style.display = "none";
+                  e.target.nextElementSibling.style.display = "flex";
+                }}
+              />
+              <div className="text-[#3FA7D6] text-6xl opacity-50 hidden">
+                ✈️
+              </div>
+            </div>
+
+            {/* Project Content */}
+            <div className="p-8">
+              <h3 className="text-xl md:text-2xl font-bold text-[#F5F5F5] mb-4">
+                Travel Guide App
+              </h3>
+              <p className="text-[#B0B0B0] leading-relaxed mb-6">
+                AI-powered travel guide application with destination search,
+                budget planning, and personalized recommendations using modern
+                web technologies.
+              </p>
+
+              {/* Tech Stack */}
+              <div className="flex flex-wrap gap-2 mb-6">
+                {[
+                  "React",
+                  "TypeScript",
+                  "Vite",
+                  "Tailwind CSS",
+                  "Vercel KV",
+                  "AI Integration",
+                ].map((tech, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1 text-sm bg-[#3FA7D6]/10 text-[#3FA7D6] rounded-full border border-[#3FA7D6]/20"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              {/* Project Links */}
+              <div className="flex space-x-4">
+                <a
+                  href="https://travel-guide-drab.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#3FA7D6] text-[#15171E] px-4 py-2 rounded-lg hover:bg-[#3FA7D6]/90 transition-colors duration-300 font-medium"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/tomrud88/ai-travel-itinerary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-[#3FA7D6] text-[#3FA7D6] px-4 py-2 rounded-lg hover:bg-[#3FA7D6] hover:text-[#15171E] transition-all duration-300 font-medium"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Project 2 - Real Estate */}
           <div className="bg-[#15171E] rounded-xl border border-[#3FA7D6]/10 hover:border-[#3FA7D6]/30 transition-all duration-300 overflow-hidden">
             {/* Project Image */}
             <div className="aspect-video bg-gradient-to-br from-[#3FA7D6]/20 to-[#15171E] flex items-center justify-center relative overflow-hidden">
@@ -81,7 +151,7 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* Project 2 - Mommy Blog */}
+          {/* Project 3 - Mommy Blog */}
           <div className="bg-[#15171E] rounded-xl border border-[#3FA7D6]/10 hover:border-[#3FA7D6]/30 transition-all duration-300 overflow-hidden">
             {/* Project Image */}
             <div className="aspect-video bg-gradient-to-br from-[#3FA7D6]/20 to-[#15171E] flex items-center justify-center relative overflow-hidden">
@@ -151,7 +221,7 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* Project 3 - Inter Milan */}
+          {/* Project 4 - Inter Milan */}
           <div className="bg-[#15171E] rounded-xl border border-[#3FA7D6]/10 hover:border-[#3FA7D6]/30 transition-all duration-300 overflow-hidden">
             {/* Project Image */}
             <div className="aspect-video bg-gradient-to-br from-[#3FA7D6]/20 to-[#15171E] flex items-center justify-center relative overflow-hidden">
