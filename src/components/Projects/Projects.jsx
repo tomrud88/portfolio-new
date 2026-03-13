@@ -87,13 +87,13 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* Project 2 - Real Estate */}
+          {/* Project 2 - Silicon Shelf */}
           <div className="bg-[#15171E] rounded-xl border border-[#3FA7D6]/10 hover:border-[#3FA7D6]/30 transition-all duration-300 overflow-hidden">
             {/* Project Image */}
             <div className="aspect-video bg-gradient-to-br from-[#3FA7D6]/20 to-[#15171E] flex items-center justify-center relative overflow-hidden">
               <img
-                src="/real-estate.png"
-                alt="Real Estate Platform"
+                src="/Silicon-Shelf.webp"
+                alt="Silicon Shelf E-commerce"
                 className="w-full h-full object-cover absolute inset-0"
                 onError={(e) => {
                   e.target.style.display = "none";
@@ -101,38 +101,45 @@ const Projects = () => {
                 }}
               />
               <div className="text-[#3FA7D6] text-6xl opacity-50 hidden">
-                🏠
+                🛒
               </div>
             </div>
 
             {/* Project Content */}
             <div className="p-8">
               <h3 className="text-xl md:text-2xl font-bold text-[#F5F5F5] mb-4">
-                Real Estate Platform
+                Silicon Shelf - E-commerce Store
               </h3>
               <p className="text-[#B0B0B0] leading-relaxed mb-6">
-                Modern real estate platform with React, Node.js, MongoDB, and
-                Socket.io for real-time chat functionality.
+                Full-stack e-commerce platform for computer hardware with user
+                authentication, shopping cart, order management, and admin
+                dashboard built with Next.js and Prisma.
               </p>
 
               {/* Tech Stack */}
               <div className="flex flex-wrap gap-2 mb-6">
-                {["React", "Node.js", "MongoDB", "Socket.io", "JWT"].map(
-                  (tech, index) => (
-                    <span
-                      key={index}
-                      className="px-3 py-1 text-sm bg-[#3FA7D6]/10 text-[#3FA7D6] rounded-full border border-[#3FA7D6]/20"
-                    >
-                      {tech}
-                    </span>
-                  )
-                )}
+                {[
+                  "Next.js",
+                  "React",
+                  "TypeScript",
+                  "Prisma",
+                  "PostgreSQL",
+                  "NextAuth",
+                  "Tailwind CSS",
+                ].map((tech, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1 text-sm bg-[#3FA7D6]/10 text-[#3FA7D6] rounded-full border border-[#3FA7D6]/20"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
 
               {/* Project Links */}
               <div className="flex space-x-4">
                 <a
-                  href="https://real-estate-peach-one.vercel.app"
+                  href="https://silicon-shelf.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#3FA7D6] text-[#15171E] px-4 py-2 rounded-lg hover:bg-[#3FA7D6]/90 transition-colors duration-300 font-medium"
@@ -140,7 +147,7 @@ const Projects = () => {
                   Live Demo
                 </a>
                 <a
-                  href="https://github.com/tomrud88/real-estate"
+                  href="https://github.com/tomrud88/silicon-shelf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border border-[#3FA7D6] text-[#3FA7D6] px-4 py-2 rounded-lg hover:bg-[#3FA7D6] hover:text-[#15171E] transition-all duration-300 font-medium"
@@ -165,7 +172,7 @@ const Projects = () => {
                 }}
               />
               <div className="text-[#3FA7D6] text-6xl opacity-50 hidden">
-                📝
+                🏠
               </div>
             </div>
 
@@ -221,7 +228,71 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* Project 4 - Inter Milan */}
+          {/* Project 4 - Real Estate */}
+          <div className="bg-[#15171E] rounded-xl border border-[#3FA7D6]/10 hover:border-[#3FA7D6]/30 transition-all duration-300 overflow-hidden">
+            {/* Project Image */}
+            <div className="aspect-video bg-gradient-to-br from-[#3FA7D6]/20 to-[#15171E] flex items-center justify-center relative overflow-hidden">
+              <img
+                src="/real-estate.png"
+                alt="Real Estate Platform"
+                className="w-full h-full object-cover absolute inset-0"
+                onError={(e) => {
+                  e.target.style.display = "none";
+                  e.target.nextElementSibling.style.display = "flex";
+                }}
+              />
+              <div className="text-[#3FA7D6] text-6xl opacity-50 hidden">
+                🏠
+              </div>
+            </div>
+
+            {/* Project Content */}
+            <div className="p-8">
+              <h3 className="text-xl md:text-2xl font-bold text-[#F5F5F5] mb-4">
+                Real Estate Platform
+              </h3>
+              <p className="text-[#B0B0B0] leading-relaxed mb-6">
+                Modern real estate platform with React, Node.js, MongoDB, and
+                Socket.io for real-time chat functionality.
+              </p>
+
+              {/* Tech Stack */}
+              <div className="flex flex-wrap gap-2 mb-6">
+                {["React", "Node.js", "MongoDB", "Socket.io", "JWT"].map(
+                  (tech, index) => (
+                    <span
+                      key={index}
+                      className="px-3 py-1 text-sm bg-[#3FA7D6]/10 text-[#3FA7D6] rounded-full border border-[#3FA7D6]/20"
+                    >
+                      {tech}
+                    </span>
+                  ),
+                )}
+              </div>
+
+              {/* Project Links */}
+              <div className="flex space-x-4">
+                <a
+                  href="https://real-estate-peach-one.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#3FA7D6] text-[#15171E] px-4 py-2 rounded-lg hover:bg-[#3FA7D6]/90 transition-colors duration-300 font-medium"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/tomrud88/real-estate"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-[#3FA7D6] text-[#3FA7D6] px-4 py-2 rounded-lg hover:bg-[#3FA7D6] hover:text-[#15171E] transition-all duration-300 font-medium"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Project 5 - Inter Milan */}
           <div className="bg-[#15171E] rounded-xl border border-[#3FA7D6]/10 hover:border-[#3FA7D6]/30 transition-all duration-300 overflow-hidden">
             {/* Project Image */}
             <div className="aspect-video bg-gradient-to-br from-[#3FA7D6]/20 to-[#15171E] flex items-center justify-center relative overflow-hidden">
